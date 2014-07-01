@@ -7,17 +7,11 @@ ALLViEW V1_ViPER ( MTK6589 )
 
 
 Many thanks to :
-	-
-	-
-	-
-	-
-	-
-	-
-	-
-	-
-	-
-	-
-	-
-	-
-	-
-	-
+	- chrmhoffmann ,
+	- C3C0 ,
+	- the omnirom project : https://gerrit.omnirom.org/#/q/topic:mt6589,n,z
+		- xplodwild
+		- drshadow
+		- pawitp
+		- dhacker29
+	- .
