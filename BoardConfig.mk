@@ -84,3 +84,6 @@ WIFI_DRIVER_FW_PATH_P2P := "STA+P2P"
 
 # telephony
 BOARD_RIL_CLASS := ../../../device/allview/V1_ViPER/ril/
+
+# allow more than one lun file - FOR USB/OTG ??
+TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/virtual/android_usb/android0/f_mass_storage/lun%d/file"
