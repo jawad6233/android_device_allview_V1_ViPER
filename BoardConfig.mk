@@ -30,14 +30,14 @@
 # well.
 USE_CAMERA_STUB := true
 
-TARGET_RECOVERY_FSTAB = device/faea/HY509_V2_0/root/fstab.mt6589
+TARGET_RECOVERY_FSTAB = device/allview/V1_ViPER/root/fstab.mt6589
 
-include vendor/faea/HY509_V2_0/BoardConfigVendor.mk
-include device/faea/HY509_V2_0/BoardConfigCommon.mk
+include vendor/allview/V1_ViPER/BoardConfigVendor.mk
+include device/allview/V1_ViPER/BoardConfigCommon.mk
 
 TARGET_USERIMAGES_SPARSE_EXT_DISABLED := true
 
-TARGET_MKIMAGE := device/faea/HY509_V2_0/mkimage
+TARGET_MKIMAGE := device/allview/V1_ViPER/mkimage
 
 TARGET_USE_BUILT_BOOTIMAGE := true
 
@@ -46,7 +46,7 @@ COMMON_GLOBAL_CFLAGS += -DMR1_AUDIO_BLOB -DDISABLE_HW_ID_MATCH_CHECK -DNEEDS_VEC
 BOARD_HAVE_PRE_KITKAT_AUDIO_BLOB := true
 
 #BOARD_SEPOLICY_DIRS := \
-#        device/faea/HY509_V2_0/sepolicy
+#        device/allview/V1_ViPER/sepolicy
 
 #BOARD_SEPOLICY_UNION := \
 #        file_contexts \
@@ -65,7 +65,7 @@ BOARD_HAVE_PRE_KITKAT_AUDIO_BLOB := true
 #        system.te \
 #        zygote.te
 
-DEVICE_RESOLUTION := 1080x1920
+DEVICE_RESOLUTION := 720x1280
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_HAS_LARGE_FILESYSTEM := true

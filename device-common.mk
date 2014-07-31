@@ -27,7 +27,7 @@ WIFI_DRIVER_FW_PATH_AP := "AP"
 WIFI_DRIVER_FW_PATH_P2P := "STA+P2P"
 
 TARGET_KERNEL_SOURCE := kernel/mt6589
-export TARGET_KERNEL_PRODUCT := e960
+export TARGET_KERNEL_PRODUCT := gionee89
 TARGET_KERNEL_CONFIG := .config
 
 PRODUCT_AAPT_CONFIG := normal large tvdpi hdpi xhdpi
@@ -50,32 +50,32 @@ include frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
-    device/faea/HY509_V2_0/root/ueventd.mt6589.rc:root/ueventd.mt6589.rc \
-    device/faea/HY509_V2_0/root/init.mt6589.usb.rc:root/init.mt6589.usb.rc \
-    device/faea/HY509_V2_0/root/init.modem.rc:root/init.modem.rc \
-    device/faea/HY509_V2_0/gps.conf:system/etc/gps.conf \
-    device/faea/HY509_V2_0/recovery/twrp.fstab:recovery/root/etc/twrp.fstab
+    device/allview/V1_ViPER/root/ueventd.mt6589.rc:root/ueventd.mt6589.rc \
+    device/allview/V1_ViPER/root/init.mt6589.usb.rc:root/init.mt6589.usb.rc \
+    device/allview/V1_ViPER/root/init.modem.rc:root/init.modem.rc \
+    device/allview/V1_ViPER/gps.conf:system/etc/gps.conf \
+    device/allview/V1_ViPER/recovery/twrp.fstab:recovery/root/etc/twrp.fstab
 
 PRODUCT_COPY_FILES += \
-    device/faea/HY509_V2_0/modules/ccci.ko:system/lib/modules/ccci.ko \
-    device/faea/HY509_V2_0/modules/ccci_plat.ko:system/lib/modules/ccci_plat.ko \
-    device/faea/HY509_V2_0/modules/devapc.ko:system/lib/modules/devapc.ko \
-    device/faea/HY509_V2_0/modules/devinfo.ko:system/lib/modules/devinfo.ko \
-    device/faea/HY509_V2_0/modules/hid-logitech-dj.ko:system/lib/modules/hid-logitech-dj.ko \
-    device/faea/HY509_V2_0/modules/mtk_fm_drv.ko:system/lib/modules/mtk_fm_drv.ko \
-    device/faea/HY509_V2_0/modules/mtk_hif_sdio.ko:system/lib/modules/mtk_hif_sdio.ko \
-    device/faea/HY509_V2_0/modules/mtklfb.ko:system/lib/modules/mtklfb.ko \
-    device/faea/HY509_V2_0/modules/mtk_stp_bt.ko:system/lib/modules/mtk_stp_bt.ko \
-    device/faea/HY509_V2_0/modules/mtk_stp_gps.ko:system/lib/modules/mtk_stp_gps.ko \
-    device/faea/HY509_V2_0/modules/mtk_stp_uart.ko:system/lib/modules/mtk_stp_uart.ko \
-    device/faea/HY509_V2_0/modules/mtk_stp_wmt.ko:system/lib/modules/mtk_stp_wmt.ko \
-    device/faea/HY509_V2_0/modules/mtk_wmt_wifi.ko:system/lib/modules/mtk_wmt_wifi.ko \
-    device/faea/HY509_V2_0/modules/pvrsrvkm.ko:system/lib/modules/pvrsrvkm.ko \
-    device/faea/HY509_V2_0/modules/scsi_tgt.ko:system/lib/modules/scsi_tgt.ko \
-    device/faea/HY509_V2_0/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
-    device/faea/HY509_V2_0/modules/sec.ko:system/lib/modules/sec.ko \
-    device/faea/HY509_V2_0/modules/vcodec_kernel_driver.ko:system/lib/modules/vcodec_kernel_driver.ko \
-    device/faea/HY509_V2_0/modules/wlan_mt6628.ko:system/lib/modules/wlan_mt6628.ko
+    device/allview/V1_ViPER/modules/ccci.ko:system/lib/modules/ccci.ko \
+    device/allview/V1_ViPER/modules/ccci_plat.ko:system/lib/modules/ccci_plat.ko \
+    device/allview/V1_ViPER/modules/devapc.ko:system/lib/modules/devapc.ko \
+    device/allview/V1_ViPER/modules/devinfo.ko:system/lib/modules/devinfo.ko \
+    device/allview/V1_ViPER/modules/hid-logitech-dj.ko:system/lib/modules/hid-logitech-dj.ko \
+    device/allview/V1_ViPER/modules/mtk_fm_drv.ko:system/lib/modules/mtk_fm_drv.ko \
+    device/allview/V1_ViPER/modules/mtk_hif_sdio.ko:system/lib/modules/mtk_hif_sdio.ko \
+    device/allview/V1_ViPER/modules/mtklfb.ko:system/lib/modules/mtklfb.ko \
+    device/allview/V1_ViPER/modules/mtk_stp_bt.ko:system/lib/modules/mtk_stp_bt.ko \
+    device/allview/V1_ViPER/modules/mtk_stp_gps.ko:system/lib/modules/mtk_stp_gps.ko \
+    device/allview/V1_ViPER/modules/mtk_stp_uart.ko:system/lib/modules/mtk_stp_uart.ko \
+    device/allview/V1_ViPER/modules/mtk_stp_wmt.ko:system/lib/modules/mtk_stp_wmt.ko \
+    device/allview/V1_ViPER/modules/mtk_wmt_wifi.ko:system/lib/modules/mtk_wmt_wifi.ko \
+    device/allview/V1_ViPER/modules/pvrsrvkm.ko:system/lib/modules/pvrsrvkm.ko \
+    device/allview/V1_ViPER/modules/scsi_tgt.ko:system/lib/modules/scsi_tgt.ko \
+    device/allview/V1_ViPER/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
+    device/allview/V1_ViPER/modules/sec.ko:system/lib/modules/sec.ko \
+    device/allview/V1_ViPER/modules/vcodec_kernel_driver.ko:system/lib/modules/vcodec_kernel_driver.ko \
+    device/allview/V1_ViPER/modules/wlan_mt6628.ko:system/lib/modules/wlan_mt6628.ko
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
