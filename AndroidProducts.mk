@@ -1,0 +1,3 @@
+PRODUCT_MAKEFILES := \
+	$(LOCAL_DIR)/full_V1_ViPER.mk \
+	$(LOCAL_DIR)/omni_V1_ViPER.mk

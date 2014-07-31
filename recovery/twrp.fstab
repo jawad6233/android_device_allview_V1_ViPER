@@ -1,0 +1,9 @@
+#mount point		fstype		device			device2			flags
+/boot			emmc		/dev/bootimg					flags=backup=1
+/cache			ext4		/emmc@cache					flags=wipeingui;canbewiped;backup=1
+/data			ext4		/emmc@usrdata					flags=wipeingui;canbewiped;backup=1
+/recovery		emmc		/dev/recovery					flags=backup=0
+/system			ext4		/emmc@android					flags=backup=1
+/uboot			emmc		/dev/uboot					flags=backup=0
+/sdcard			vfat	    	/emmc@fat					flags=storage;settingsstorage;backup=0
+/external_sdcard 	vfat		/dev/block/mmcblk1p1	/dev/block/mmcblk1	flags=storage;wipeingui;removable;backup=0
